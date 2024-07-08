@@ -2,7 +2,6 @@ import { useAccount, useConnect, useDisconnect } from "wagmi";
 
 window.open = (function (open) {
 	return function (url, name, features) {
-		// set name if missing here
 		return open.call(window, url, "_blank", features);
 	};
 })(window.open);
